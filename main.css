@@ -1,0 +1,253 @@
+/* Global elements Styling */
+@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+/* Colors Var */
+:root{
+--light-color: #ffffff;
+--light-medium-color: #f4e289;
+--mediumcolor: #eac614;
+--dark-medium-color:#75630a;
+--dark-color: #000000;
+
+}
+
+body{
+    background-color: var(--light-color);
+    font-family: 'Lora', serif;
+}
+
+.paper-wapper{
+    position: relative;
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    color: var(--dark-color);
+    text-decoration: none;
+}
+
+/* Global Classes Styling */
+
+.container{
+    max-width: 1000px;
+    width: 100%;
+    margin: auto;
+}
+
+.bnt{
+    padding: 0 20px;
+    height: 40px;
+    font-size: 1em;
+    font-weight: 900;
+    text-transform: uppercase;
+    border: 3px var(--dark-color) solid;
+    border-radius: 2px;
+    background: transparent;
+    cursor: pointer;
+}
+
+.grid{
+    display: flex;
+}
+@media(max-width: 650px){
+    .grid{
+        display: flex;
+    }
+}
+
+header{
+    position: fixed;
+    top: 0;
+    min-height: 50px;
+    padding: 0px 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-image: linear-gradient(to bottom,var(--light-medium-color), var(--light-color)) ;
+    width: 100%;
+}
+
+@media(max-width: 650px){
+    header{
+        flex-wrap: wrap;
+    }
+}
+
+/* iframe{
+    display: none;
+} */
+
+/* Logo Styling */
+
+.logo{
+    width: 60vw;
+}
+.logo img{
+    width: 90px;
+    background: transparent;
+}
+@media (max-width: 650px) {
+    .logo {
+      margin-top: 0px;
+      width: 100%;
+      position: relative;
+    }
+  }
+
+.logo > img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-left: 10px;
+}
+@media(max-width: 650px){
+    .logo > img{
+        margin: auto;
+    }
+}
+
+/* Nav Styling */
+
+nav{
+    font-weight: 400;
+}
+
+@media (max-width: 650px){
+    nav {
+        margin-top: 10px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0 50px;
+    }
+    nav li{
+        padding-bottom: 5px;
+    }
+}
+
+nav > ul{
+    width: 35vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+@media (max-width: 650px){
+    nav > ul{
+        flex-direction: column;
+    }
+}
+
+/* Submit Email and Button Styling */
+
+#get-email{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 200px;
+    margin-top: 50px;
+}
+
+#get-email > h2{
+    margin: 20px 0 10px 0;
+    word-wrap: break-word;
+}
+
+#get-email input[type="email"]{
+    max-width: 275px;
+    width: 100%;
+    padding: 5px;
+    font-family: 'Roboto Slab', serif;
+}
+
+#get-email input[type="submit"]{
+    max-width: 150px;
+    width: 100%;
+    height: 30px;
+    margin: 15px 0;
+    padding: 1%;
+    border: 0;
+    background-color: var(--dark-color);
+    color: var(--light-color);
+    transition: 0.5s;
+}
+#get-email input[type="submit"]:hover{
+    border: 1px var(--dark-color) solid;
+    background-color: var(--light-color);
+    color: var(--dark-color);
+    padding: 0.5%;
+    transition:0.5s;
+
+}
+
+@media (max-width: 650px){
+    #get-email{
+        margin-top: 130px;
+    }
+    #get-email h2{
+        font-size: medium;
+    }
+}
+
+/* Sobre a Serie Styling */
+
+#sobre-a-serie{
+    margin-top: 30px;
+}
+
+#sobre-a-serie img{
+    display: flex;
+}
+
+@media(max-width: 550px){
+    #sobre-a-serie img{
+        display: none;
+        width: 90px;
+    }
+    #sobre-a-serie h2{
+        margin-top: 5%;
+    }
+}
+
+
+#sobre-a-serie .desc{
+    width: 100%;
+    display: block;
+    text-align: center;
+    padding: 0;
+}
+
+/* Sobre a Autor Styling */
+
+#sobre-o-autor{
+    margin-top: 10%;
+    display: flex;
+    justify-content: center;
+}
+
+/* Livros Styling */
+#sobre-os-livros{
+    padding: 5%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.livro{
+    margin: 10px;
+    padding: 5px;
+    height: 179px;
+    width: 270px;
+}
